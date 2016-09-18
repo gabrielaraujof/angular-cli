@@ -4,6 +4,11 @@ MAINTAINER gabrielaraujof <contact@gbiel.com>
 
 # Commands
 RUN \
+  apt-get update && \
+  apt-get install -y --force-yes \
+  xvfb \
+  chromium && \
+  apt-get autoremove -y && \
   npm i angular-cli -g
 
 # For tests
