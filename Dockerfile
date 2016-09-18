@@ -4,7 +4,8 @@ MAINTAINER gabrielaraujof <contact@gbiel.com>
 
 # Commands
 RUN \
-  npm i angular-cli -g && \
-  # For tests
-  export CHROME_BIN=chromium-browser
-  export DISPLAY=:99.0
+  npm i angular-cli -g
+
+# For tests
+ENV DISPLAY :99
+ENV CHROME_BIN /usr/bin/chromium
