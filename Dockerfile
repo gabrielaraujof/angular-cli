@@ -9,7 +9,7 @@ RUN \
   xvfb \
   chromium && \
   apt-get autoremove -y && \
-  npm i angular-cli -g
+  npm i angular-cli firebase-tools -g 
 
 # For tests
 ENV DISPLAY :99
