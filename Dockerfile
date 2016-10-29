@@ -7,7 +7,7 @@ RUN \
   apt-get update && \
   apt-get install -y --force-yes \
   xvfb \
-  chromium && \
+  chromium libgconf-2-4 && \
   apt-get autoremove -y && \
   npm i angular-cli firebase-tools -g 
 
