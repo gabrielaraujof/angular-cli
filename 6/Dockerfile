@@ -15,7 +15,7 @@ RUN \
 ENV DISPLAY :99
 ENV CHROME_BIN /usr/bin/chromium
 
-ADD entrypoint.sh /entrypoint.sh
+ADD ../entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
