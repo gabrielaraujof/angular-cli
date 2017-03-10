@@ -10,8 +10,6 @@ RUN \
   apt-get autoremove -y && \
   npm i @angular/cli firebase-tools -g
 
-RUN webdriver-manager update
-
 # For tests
 ENV DISPLAY :99
 ENV CHROME_BIN /usr/bin/chromium
