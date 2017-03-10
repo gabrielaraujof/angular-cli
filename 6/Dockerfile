@@ -4,12 +4,13 @@ MAINTAINER gabrielaraujof <contact@gbiel.com>
 
 # Commands
 RUN \
-  apt-get update && \
+  apt-get update --fix-missing && \
   apt-get install -y --force-yes \
-  xvfb \
-  chromium libgconf-2-4 && \
+  xvfb libgconf-2-4 libexif12 chromium && \
   apt-get autoremove -y && \
   npm i @angular/cli firebase-tools -g
+
+RUN webdriver-manager update
 
 # For tests
 ENV DISPLAY :99
