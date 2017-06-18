@@ -2,7 +2,7 @@ FROM node:latest
 
 LABEL maintainer "Gabriel Araujo <contact@gbiel.com>"
 
-USER node
+USER root
 
 # Define working directory.
 WORKDIR /home/workspace
