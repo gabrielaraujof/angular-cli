@@ -2,6 +2,8 @@ FROM node:latest
 
 LABEL maintainer "Gabriel Araujo <contact@gbiel.com>"
 
+USER root
+
 RUN mkdir /etc/.npm-global
 ENV PATH=/etc/.npm-global/bin:$PATH
 ENV NPM_CONFIG_PREFIX=/etc/.npm-global
