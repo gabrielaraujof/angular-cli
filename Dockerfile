@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:boron
 
 LABEL maintainer "Gabriel Araujo <contact@gbiel.com>"
 
